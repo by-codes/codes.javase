@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class><!--根元素--><student><name>沾上干</name><age>21</age><adress>南京市玄武区玄武湖玄武垃圾桶1</adress></student>
+  <student>
+    <name>沾上干2</name>
+    <age>23</age>
+    <adress>南京市玄武区玄武湖玄武垃圾桶2</adress>
+  </student>
+  <student>
+    <name>沾上干3</name>
+    <age>25</age>
+    <adress>南京市玄武区玄武湖玄武垃圾桶3</adress>
+  </student>
+</class>

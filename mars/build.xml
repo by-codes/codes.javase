@@ -1,0 +1,60 @@
+<project basedir="." default="dist" name="Mars">
+    <description>
+        Mars is only for education.
+    </description>
+    <!-- set global properties for this build -->
+    <property location="src" name="src">
+    </property>
+    <property name="ver" value="1.0">
+    </property>
+    <property location="build" name="build">
+    </property>
+    <property location="dist" name="dist">
+    </property>
+    <target name="init">
+        <!-- Create the time stamp -->
+        <tstamp>
+        </tstamp>
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}">
+        </mkdir>
+    </target>
+    <target depends="init" description="compile the source" name="compile">
+        <!-- Compile the Java code from ${src} into ${build} -->
+        <javac classpath="libs/commons-csv-1.7.jar" destdir="${build}" srcdir="${src}">
+        </javac>
+        <copy todir="${build}">
+            <fileset dir="resources">
+                <include name="master.csv">
+                </include>
+            </fileset>
+        </copy>
+    </target>
+    <target depends="compile" description="generate the distribution" name="dist">
+        <jar basedir="${build}" jarfile="${dist}/mars-${DSTAMP}.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.banyuan.mars.App">
+                </attribute>
+                <attribute name="Class-Path" value="libs/commons-csv-1.7.jar">
+                </attribute>
+            </manifest>
+        </jar>
+    </target>
+    <target depends="dist" name="deploy">
+        <javadoc author="true" classpath="libs/commons-csv-1.7.jar" destdir="dist/apidocs" packagenames="com.banyuan.*" sourcepath="src" use="true" version="true" windowtitle="Mars API">
+        </javadoc>
+        <copy todir="${dist}/libs">
+            <fileset dir="libs">
+                <include name="**/*.jar">
+                </include>
+            </fileset>
+        </copy>
+    </target>
+    <target description="clean up" name="clean">
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}">
+        </delete>
+        <delete dir="${dist}">
+        </delete>
+    </target>
+</project>

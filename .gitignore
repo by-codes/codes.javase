@@ -1,0 +1,15 @@
+.idea
+target
+mars/build
+mars/dist
+mars-mvn/build
+mars-mvn/dist
+.DS_Store
+
+*.jpg
+*.csv
+*.class
+
+**/*.jad
+**/*.iml
+**/out

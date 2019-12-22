@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <isbn>9787115474889</isbn>
+        <name>Python基础教程</name>
+        <price>68.3</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Magnus Lie Hetland</author>
+        <url>https://item.jd.com/12279949.html</url>
+    </book>
+    <book>
+        <isbn>9787111612728</isbn>
+        <name>Effective Java中文版</name>
+        <price>75.9</price>
+        <press>机械工业出版社</press>
+        <figure></figure>
+        <author>Joshua Bloch</author>
+        <url>https://item.jd.com/27162020235.html</url>
+    </book>
+    <book>
+        <isbn>9787115390592</isbn>
+        <name>C Primer Plus 第6版</name>
+        <price>76.5</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Stephen Prata</author>
+        <url>https://item.jd.com/11917487.html</url>
+    </book>
+    <book>
+        <isbn>9787115504890</isbn>
+        <name>深入浅出Docker</name>
+        <price>59.3</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Nigel Poulton</author>
+        <url>https://item.jd.com/12564378.html</url>
+    </book>
+    <book>
+        <isbn>9787512380936</isbn>
+        <name>Modern PHP(中文版)</name>
+        <price>31.2</price>
+        <press>中国电力出版社</press>
+        <figure></figure>
+        <author>Josh Lockhart</author>
+        <url>https://item.jd.com/11786541.html</url>
+    </book>
+    <book>
+        <isbn>9787115338365</isbn>
+        <name>HTML5权威指南</name>
+        <price>89</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Adam Freeman</author>
+        <url>https://item.jd.com/11380424.html</url>
+    </book>
+    <book>
+        <isbn>9787115191120</isbn>
+        <name>MySQL必知必会</name>
+        <price>26.9</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Ben Forta</author>
+        <url>https://item.jd.com/10063118.html</url>
+    </book>
+    <book>
+        <isbn>9787115457462</isbn>
+        <name>Swift编程权威指南</name>
+        <price>61.4</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Matthew Mathias</author>
+        <url>https://item.jd.com/12215156.html</url>
+    </book>
+    <book>
+        <isbn>9787519824945</isbn>
+        <name>Go语言并发之道</name>
+        <price>65</price>
+        <press>中国电力出版社</press>
+        <figure></figure>
+        <author>Katherine Cox-Buday</author>
+        <url>https://item.jd.com/11067810.html</url>
+    </book>
+    <book>
+        <isbn>9787115473899</isbn>
+        <name>HTTP/2基础教程</name>
+        <price>33.8</price>
+        <press>人民邮电出版社</press>
+        <figure></figure>
+        <author>Stephen Ludin</author>
+        <url>https://item.jd.com/12283477.html</url>
+    </book>
+</books>

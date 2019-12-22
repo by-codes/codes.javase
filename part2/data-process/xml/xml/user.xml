@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users> 
+  <user> 
+    <username>Jack</username>  
+    <age>28</age> 
+  </user>  
+  <user> 
+    <username>张三</username>  
+    <age>30</age> 
+  </user> 
+</users>

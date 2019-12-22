@@ -1,1 +1,1 @@
-# codes.javase
+# Codes for Java SE (CJ001) 

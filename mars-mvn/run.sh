@@ -1,0 +1,2 @@
+export CLASSPATH=.:$(echo ~/.m2/repository)/org/apache/commons/commons-csv/1.7/commons-csv-1.7.jar 
+java -cp ./target/classes:$(echo ~/.m2/repository)/org/apache/commons/commons-csv/1.7/commons-csv-1.7.jar com.banyuan.mars.App
