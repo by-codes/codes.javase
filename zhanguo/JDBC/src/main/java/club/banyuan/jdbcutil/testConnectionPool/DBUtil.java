@@ -1,4 +1,4 @@
-package club.banyuan.jdbc.util;
+package club.banyuan.jdbcutil.testConnectionPool;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,9 +16,11 @@ public class DBUtil {
             Class.forName(driver);
             try {
                 con= DriverManager.getConnection(url, username,password);
+              System.out.println("数据库连接成功...");
                 return con;
             } catch (SQLException e) {
                 e.printStackTrace();
+              System.out.println("数据库连接失败...");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

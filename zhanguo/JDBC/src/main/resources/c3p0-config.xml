@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+  <default-config>
+    <property  name="driverClass">com.mysql.jdbc.Driver</property>
+    <property  name="jdbcUrl">jdbc:mysql://localhost:3306/jian</property>
+    <property  name="user">root</property>
+    <property  name="password">zhou</property>
+    <property  name="initialPoolSize">50</property>
+    <!--mysql  默认最大连接数1000-->
+    <property  name="maxPoolSize">100</property>
+  </default-config>
+  <name-config  name="wps">
+    <property  name="driverClass">com.mysql.jdbc.Driver</property>
+    <property  name="jdbcUrl">jdbc:mysql://localhost:3306/jian?useSSL=false</property>
+    <property  name="user">root</property>
+    <property  name="password">zhou</property>
+
+  </name-config>
+</c3p0-config>

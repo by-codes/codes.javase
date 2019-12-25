@@ -1,4 +1,4 @@
-package club.banyuan.jdbc.util;
+package club.banyuan.jdbc02.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,12 @@ import java.sql.SQLException;
 
 public class DBUtil {
 
-   static  Connection con=null;
+  public static  Connection conn=null;
+
+   static {
+     conn=getConnection();
+   }
+
     public  static Connection  getConnection(){
         String  url="jdbc:mysql://localhost:3306/jian?useSSL=false";
         String  driver="com.mysql.jdbc.Driver";
@@ -15,8 +20,8 @@ public class DBUtil {
         try {
             Class.forName(driver);
             try {
-                con= DriverManager.getConnection(url, username,password);
-                return con;
+                conn= DriverManager.getConnection(url, username,password);
+                return conn;
             } catch (SQLException e) {
                 e.printStackTrace();
             }
@@ -28,7 +33,7 @@ public class DBUtil {
 
     public   static  void  closeCon(){
         try {
-            con.close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

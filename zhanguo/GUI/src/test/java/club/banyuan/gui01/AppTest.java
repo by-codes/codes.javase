@@ -1,4 +1,4 @@
-package club.banyuan.jdbc;
+package club.banyuan.gui01;
 
 import static org.junit.Assert.assertTrue;
 
@@ -17,10 +17,4 @@ public class AppTest
     {
         assertTrue( true );
     }
-
-
-
-
-
-
 }
