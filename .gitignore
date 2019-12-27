@@ -9,7 +9,9 @@ mars-mvn/dist
 *.jpg
 *.csv
 *.class
+*.txt
 
 **/*.jad
 **/*.iml
 **/out
+**/target
